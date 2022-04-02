@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io/solutions/order-summary-component-using-flexbox-rJHXnaSm5](https://www.frontendmentor.io/solutions/order-summary-component-using-flexbox-rJHXnaSm5)
 - Live Site URL: [bruins001.github.io/Frontend-Mentor-Webpages/order-summary-card/](https://bruins001.github.io/Frontend-Mentor-Webpages/order-summary-card/)
 
 ## My process
