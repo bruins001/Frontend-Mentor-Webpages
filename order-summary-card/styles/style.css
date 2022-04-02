@@ -9,8 +9,6 @@ html {
 }
 
 body {
-  font-family: "Red Hat Display", sans-serif;
-
   /* Primary Colors */
   --Pale-blue: hsl(225, 100%, 94%);
   --Bright-blue: hsl(245, 75%, 52%);
@@ -19,10 +17,13 @@ body {
   --Desaturated-blue: hsl(224, 23%, 55%);
   --Dark-blue: hsl(223, 47%, 23%);
   /* font size */
-  --header-1: 3rem;
-  --header-2: 2.5rem;
-  --header-3: 2rem;
+  --header-1: 2.5rem;
+  --header-2: 2rem;
+  --header-3: 1.5rem;
+  --header-4: 1.4rem;
   --text: 1.6rem;
+
+  font-family: "Red Hat Display", sans-serif;
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
   font-weight: 900;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  color: var(--Dark-blue);
 }
 
 h2 {
@@ -42,22 +44,28 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  font-size: var(--header-4);
+  font-weight: 500;
+}
+
 p,
-a,
-ul {
+a {
   font-size: var(--text);
   font-weight: 500;
   text-align: center;
-  max-width: 50%;
+  max-width: 80%;
 }
 
 p {
-  color: gray;
+  color: var(--Desaturated-blue);
   margin-bottom: 1rem;
 }
 
 ul {
   list-style: none;
+  font-size: var(--text);
+  font-weight: 500;
 }
 
 section {
@@ -74,14 +82,36 @@ section {
   background-position: top;
 }
 
+span {
+  color: gray;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 85%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  background: var(--Bright-blue);
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px 0px var(--Bright-blue);
+}
+
+button h3 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 /* card */
 .image {
   background: url("../images/illustration-hero.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   min-width: 100%;
-  min-height: 40vh;
+  min-height: 25vh;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
 }
@@ -90,12 +120,79 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80%;
+  max-width: 90%;
   background-color: white;
   border-radius: 3rem;
+}
+
+/* subscription */
+
+.subscription {
+  display: flex;
+  align-items: center;
+  background: var(--Very-pale-blue);
+  min-width: 80%;
+  padding: 1.5rem 0rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0rem;
+}
+
+.subscription img {
+  margin: 0rem 2rem;
+}
+
+.subscription a {
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.blue {
+  color: var(--Dark-blue);
+}
+
+#cancel {
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+  margin: 2rem 0px;
+}
+
+/* hover */
+
+#cancel:hover,
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+#cancel:hover {
+  color: var(--Dark-blue);
+}
+
+button:hover {
+  background: rgba(56, 41, 224, 0.7);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--Bright-blue);
 }
 
 /* media query */
 
 @media only screen and (min-width: 1440px) {
+  .card {
+    max-width: 25%;
+  }
+
+  p {
+    max-width: 60%;
+  }
+
+  .subscription {
+    margin-bottom: 3rem;
+  }
+
+  #cancel {
+    margin: 4rem 0rem;
+  }
 }
