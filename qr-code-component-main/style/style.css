@@ -24,12 +24,14 @@ main {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
   font-weight: 400;
   color: var(--Grayish-blue);
 }
@@ -38,15 +40,18 @@ p {
   background-color: white;
   text-align: center;
   border-radius: 25px;
+  max-width: 22vw;
 }
 
 img {
   padding: 1rem;
   border-radius: 25px;
+  height: 25%;
+  width: 100%;
 }
 
 .text {
-  max-width: 26ch;
+  max-width: 35ch;
   margin: 0 auto;
 }
 
@@ -56,16 +61,17 @@ img {
     max-width: 85vw;
   }
 
-  img {
-    height: 100%;
-    width: 100%;
-  }
-
   h1 {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
   p {
+    font-size: 1rem;
     margin-bottom: 2rem;
+  }
+
+  .text {
+    max-width: 26ch;
   }
 }
