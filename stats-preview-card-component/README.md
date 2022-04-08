@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [www.frontendmentor.io/solutions/statspreviewcardcomponent-using-flexbox-SJ66KpTXq](https://www.frontendmentor.io/solutions/statspreviewcardcomponent-using-flexbox-SJ66KpTXq)
 - Live Site URL: [bruins001.github.io/Frontend-Mentor-Webpages/stats-preview-card-component](https://bruins001.github.io/Frontend-Mentor-Webpages/stats-preview-card-component)
 
 ## My process
