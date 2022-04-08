@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --Verry-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+
+  font-size: 0.94rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--Verry-dark-blue);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  color: var(--Slightly-transparent-white-paragraph);
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+span {
+  color: var(--Soft-violet);
+}
+
+.card {
+  background-color: var(--Dark-desaturated-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 1.5rem;
+}
+
+aside {
+  min-width: 100%;
+  min-height: 35vh;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+aside .filter {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 83%, 24%, 0.529);
+}
+
+.text-side {
+  padding: 2rem 3rem 0 3rem;
+}
+
+.text {
+  max-width: 34ch;
+  text-align: center;
+}
+
+ul {
+  margin-top: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+  color: var(--White);
+  list-style: none;
+}
+
+ul span {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: var(--Slightly-transparent-white-paragraph);
+  font-variant: small-caps;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  aside {
+    min-width: 30vw;
+    order: 2;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .text-side {
+    padding: 3rem 5rem;
+  }
+
+  .card {
+    margin: 0rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+}
